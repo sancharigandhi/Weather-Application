@@ -9,6 +9,8 @@ const loadingScreen = document.querySelector(".loading-container");
 const userInfoContainer = document.querySelector(".user-info-container");
 
 let oldTab = userTab;
+require("dotenv").config();
+const API_KEY = process.env.API_KEY;
 oldTab.classList.add("current-tab");
 getfromSessionStorage();
 
